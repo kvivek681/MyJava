@@ -1,7 +1,9 @@
 package com.vivek;
 
 import org.springframework.beans.factory.annotation.Required;
-
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+@Component(value="hb2")
 public class HelloIndiaBean {
 	
 	private String msg;
@@ -15,6 +17,7 @@ public class HelloIndiaBean {
 		return msg;
 	}
 	@Required
+	@Value("Hello India")
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}

@@ -8,7 +8,7 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ApplicationContext ap=new ClassPathXmlApplicationContext("Bean.xml");
-		HelloWorldBean hb=(HelloWorldBean) ap.getBean("helloWorld");
+		HelloWorldBean hb=(HelloWorldBean) ap.getBean("helloworld");
 		System.out.println(hb);
 		((ClassPathXmlApplicationContext)ap).close();
 		
